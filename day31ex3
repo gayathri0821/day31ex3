@@ -1,0 +1,79 @@
+package march31;
+
+public class Ex1c 
+{
+	private int customerid;
+	private String customername;
+	private static String customeraddress;
+	private long creditcardnumber;
+	private long mobilenumber;
+	private String productname;
+	private static double price;
+	private int quantity;
+	public Ex1c(int customerid, String customername, long creditcardnumber, long mobilenumber, String productname,
+			int quantity) {
+		super();
+		this.customerid = customerid;
+		this.customername = customername;
+		this.creditcardnumber = creditcardnumber;
+		this.mobilenumber = mobilenumber;
+		this.productname = productname;
+		this.quantity = quantity;
+	}
+	public int getCustomerid() {
+		return customerid;
+	}
+	public void setCustomerid(int customerid) {
+		this.customerid = customerid;
+	}
+	public String getCustomername() {
+		return customername;
+	}
+	public void setCustomername(String customername) {
+		this.customername = customername;
+	}
+	public static String getCustomeraddress() {
+		return customeraddress;
+	}
+	public static void setCustomeraddress(String customeraddress) {
+		Ex1c.customeraddress = customeraddress;
+	}
+	public long getCreditcardnumber() {
+		return creditcardnumber;
+	}
+	public void setCreditcardnumber(long creditcardnumber) {
+		this.creditcardnumber = creditcardnumber;
+	}
+	public long getMobilenumber() {
+		return mobilenumber;
+	}
+	public void setMobilenumber(long mobilenumber) {
+		this.mobilenumber = mobilenumber;
+	}
+	public String getProductname() {
+		return productname;
+	}
+	public void setProductname(String productname) {
+		this.productname = productname;
+	}
+	public static double getPrice() {
+		return price;
+	}
+	public static void setPrice(double price) {
+		Ex1c.price = price;
+	}
+	public int getQuantity() {
+		return quantity;
+	}
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
+	}
+	@Override
+	public String toString() {
+		return "Ex1c [customerid=" + customerid + ", customername=" + customername + ", creditcardnumber="
+				+ creditcardnumber + ", mobilenumber=" + mobilenumber + ", productname=" + productname + ", quantity="
+				+ quantity + "]";
+	}
+	
+
+}
